@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sneetakarta07-lab.github.io/crypto/sitemap.xml
