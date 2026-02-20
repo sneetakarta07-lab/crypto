@@ -1,192 +1,271 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Crypto Tax in Japan (2026) – Simple Guide for Beginners</title>
-  <meta name="description" content="Japan crypto tax guide (2026). Learn what transactions may be taxable, how to track trades, record-keeping tips, and beginner-friendly examples."/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <title>Crypto Tax in Japan (2026) – Complete Beginner Guide</title>
+  <meta name="description" content="Crypto tax in Japan explained (2026). Learn how Bitcoin and crypto are taxed, capital gains rules, examples, record keeping, and common mistakes beginners make."/>
   <meta name="robots" content="index,follow,max-image-preview:large"/>
   <meta name="content-language" content="en,ja"/>
   <link rel="canonical" href="https://sneetakarta07-lab.github.io/crypto/crypto-tax-japan-2026.html"/>
 
-  <!-- same style + toggle JS (shortened to save your time) -->
+  <meta property="og:title" content="Crypto Tax in Japan (2026) – Complete Beginner Guide"/>
+  <meta property="og:description" content="Understand crypto taxes in Japan: Bitcoin profits, reporting basics, examples, and FAQs for beginners."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://sneetakarta07-lab.github.io/crypto/crypto-tax-japan-2026.html"/>
+  <meta property="og:image" content="https://sneetakarta07-lab.github.io/crypto/images/crypto-tax-japan-2026.webp"/>
+
   <style>
-    :root{--bg:#0b1220;--panel:rgba(15,26,48,.62);--panel2:rgba(11,18,32,.62);--text:#e7eefc;--muted:#a8b3cf;--line:rgba(255,255,255,.10);--brand:#6aa7ff;--brand2:#7c5cff;--shadow:0 14px 40px rgba(0,0,0,.35);--radius:18px;--max:1120px}
-    *{box-sizing:border-box} body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:radial-gradient(1200px 700px at 20% 0%, rgba(124,92,255,.18), transparent 55%),radial-gradient(900px 600px at 90% 10%, rgba(106,167,255,.16), transparent 55%),linear-gradient(180deg,var(--bg),#070b14 70%);color:var(--text);line-height:1.75}
-    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
-    .wrap{max-width:var(--max);margin:0 auto;padding:26px 18px 70px}
-    .card{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);backdrop-filter:blur(10px);box-shadow:var(--shadow)}
-    .hero{padding:20px;margin-top:14px}
-    .meta{color:var(--muted);font-size:13px}
-    .langBar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:12px 0 0}
-    .langBtn{border:1px solid var(--line);background:rgba(11,18,32,.55);color:var(--text);padding:8px 12px;border-radius:999px;cursor:pointer;font-weight:650}
-    .grid{display:grid;grid-template-columns:1fr 320px;gap:16px;align-items:start;margin-top:16px}
-    @media(max-width:980px){.grid{grid-template-columns:1fr}}
-    .article{padding:22px}
-    h1{margin:0 0 8px;font-size:clamp(24px,3vw,40px);line-height:1.15}
-    h2{margin:26px 0 10px;font-size:22px} h3{margin:18px 0 8px;font-size:18px}
-    .note{padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:var(--panel2);color:var(--muted);margin:14px 0}
-    img{max-width:100%;border-radius:14px;border:1px solid var(--line);display:block}
-    ul{margin:10px 0 10px 20px} li{margin:6px 0}
-    details{border:1px solid var(--line);border-radius:14px;background:rgba(11,18,32,.55);padding:10px 12px;margin:10px 0}
-    summary{cursor:pointer;font-weight:800}
-    .toc{padding:16px} .toc a{display:block;color:var(--muted);padding:8px 10px;border-radius:12px}
-    .toc a:hover{background:rgba(106,167,255,.08);color:var(--text);text-decoration:none}
-    footer{margin-top:18px;padding:16px;color:var(--muted);text-align:center;border-top:1px solid var(--line)}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,"Noto Sans";
+      background:#0b1220;
+      color:#e7eefc;
+      line-height:1.75;
+    }
+    a{color:#6aa7ff;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:auto;padding:26px 18px 60px}
+    .card{
+      background:rgba(15,26,48,.65);
+      border:1px solid rgba(255,255,255,.1);
+      border-radius:18px;
+      padding:22px;
+      margin-bottom:18px;
+    }
+    h1{font-size:clamp(28px,3vw,44px)}
+    h2{margin-top:28px}
+    h3{margin-top:18px}
+    .note{
+      background:rgba(11,18,32,.7);
+      border:1px solid rgba(255,255,255,.1);
+      border-radius:14px;
+      padding:12px 14px;
+      margin:14px 0;
+      color:#a8b3cf;
+    }
+    .langBar{display:flex;gap:10px;margin-bottom:14px}
+    .langBtn{
+      background:#111b33;
+      color:#fff;
+      border:1px solid rgba(255,255,255,.15);
+      padding:8px 12px;
+      border-radius:999px;
+      cursor:pointer;
+      font-weight:600;
+    }
+    img{max-width:100%;border-radius:14px}
   </style>
 
   <script>
-    function showEN(){en.style.display='block';jp.style.display='none';document.documentElement.lang='en';}
-    function showJP(){en.style.display='none';jp.style.display='block';document.documentElement.lang='ja';}
-    document.addEventListener("DOMContentLoaded", ()=>showEN());
-  </script>
-
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-    {"@type":"Question","name":"Is crypto profit taxable in Japan?","acceptedAnswer":{"@type":"Answer","text":"Crypto gains may be taxable in Japan depending on your situation. This page is general information; consult a qualified tax professional."}},
-    {"@type":"Question","name":"What records should I keep?","acceptedAnswer":{"@type":"Answer","text":"Keep trade history, deposits/withdrawals, dates, prices, fees, and notes for each transaction."}}
-  ]}
+    function showEN(){
+      document.getElementById("en").style.display="block";
+      document.getElementById("jp").style.display="none";
+      document.documentElement.lang="en";
+    }
+    function showJP(){
+      document.getElementById("en").style.display="none";
+      document.getElementById("jp").style.display="block";
+      document.documentElement.lang="ja";
+    }
+    document.addEventListener("DOMContentLoaded",()=>showEN());
   </script>
 </head>
 
 <body>
 <div class="wrap">
 
-  <div class="card hero">
-    <h1>Crypto Tax in Japan (2026) – Simple Guide for Beginners</h1>
-    <div class="meta">Japan Focus • Record keeping • Beginner examples • Not tax advice</div>
+  <div class="card">
+    <h1>Crypto Tax in Japan (2026): Complete Beginner Guide</h1>
+    <p>
+      If you buy, sell, or trade Bitcoin and other cryptocurrencies in Japan, understanding taxes is extremely important.
+      Many beginners focus only on buying crypto and completely ignore tax rules—until they get confused or worried later.
+      This guide explains crypto tax in Japan in **simple language**, with examples and practical advice.
+    </p>
 
     <div class="langBar">
       <button class="langBtn" onclick="showEN()">English</button>
       <button class="langBtn" onclick="showJP()">日本語</button>
     </div>
 
-    <img src="images/crypto-tax-japan-2026.webp" alt="Japan crypto tax guide 2026" loading="lazy" decoding="async">
+    <img src="images/crypto-tax-japan-2026.webp"
+         alt="Crypto tax rules in Japan explained 2026">
 
     <div class="note">
-      Internal links:
-      <a href="best-crypto-exchange-japan-2026.html">Main exchange guide</a> •
-      <a href="how-to-buy-bitcoin-japan.html">Buy BTC steps</a> •
-      <a href="okx-japan-review.html">OKX review</a> •
-      <a href="best-crypto-app-japan.html">Best apps</a>
+      Internal guides:
+      <a href="best-crypto-exchange-japan-2026.html">Best crypto exchange in Japan</a> •
+      <a href="how-to-buy-bitcoin-japan.html">How to buy Bitcoin in Japan</a> •
+      <a href="okx-japan-review.html">OKX Japan review</a> •
+      <a href="best-crypto-app-japan.html">Best crypto apps in Japan</a>
     </div>
   </div>
 
-  <div class="grid">
-    <article class="card article">
+  <!-- ================= ENGLISH FULL ================= -->
+  <div id="en">
 
-      <div id="en">
-        <p>
-          Taxes are not the “fun” part of crypto, but in Japan they matter. Many beginners focus only on buying Bitcoin,
-          then ignore taxes until they need withdrawals, reporting, or they have multiple trades across months.
-          This page explains the topic in simple language so you can build good habits early.
-        </p>
+    <div class="card">
+      <h2>Is cryptocurrency taxable in Japan?</h2>
+      <p>
+        Yes. In general, profits from cryptocurrency transactions may be taxable in Japan.
+        This includes Bitcoin (BTC), Ethereum (ETH), and most other digital assets.
+        The exact tax treatment depends on your situation, how you trade, and how much profit you make.
+      </p>
 
-        <div class="note">
-          <strong>Disclaimer:</strong> This is general educational information, not legal or tax advice.
-          Rules can change and depend on your situation. For accurate guidance, consult a qualified tax professional in Japan.
-        </div>
+      <p>
+        Japan treats crypto differently from stocks. Instead of capital gains tax like in some countries,
+        crypto profits are usually classified as <strong>miscellaneous income</strong>.
+        This is why many beginners get confused.
+      </p>
 
-        <h2 id="why">Why tax planning matters for crypto in Japan</h2>
-        <p>
-          When you trade, swap coins, or realize profit, it can create a taxable event depending on how your country treats crypto.
-          The biggest mistake is not tracking your trades and fees. Even if you use one exchange, you still need clear records.
-        </p>
-
-        <h2 id="events">Common transactions that may be taxable</h2>
-        <ul>
-          <li>Selling BTC/ETH for fiat or stablecoins</li>
-          <li>Swapping one coin for another (crypto-to-crypto)</li>
-          <li>Spending crypto on goods/services</li>
-          <li>Some rewards/earnings (depending on rules)</li>
-        </ul>
-
-        <h2 id="records">What records you should keep (beginner checklist)</h2>
-        <ul>
-          <li>Date/time of each trade</li>
-          <li>Buy price and sell price</li>
-          <li>Trade fees and withdrawal fees</li>
-          <li>Deposits/withdrawals (TXIDs if available)</li>
-          <li>Notes: why you traded (helps later)</li>
-        </ul>
-
-        <h2 id="tools">How to track your trades easily</h2>
-        <p>
-          The easiest way is to export your exchange history monthly and store it safely.
-          If you use multiple exchanges, keep separate exports, then merge them in one place (sheet or tracking tool).
-          Even simple record-keeping is better than nothing.
-        </p>
-
-        <h2 id="examples">Simple examples (beginner)</h2>
-        <p><strong>Example 1:</strong> You buy BTC, then sell later for profit. That profit may be taxable depending on rules.</p>
-        <p><strong>Example 2:</strong> You swap ETH to BTC. Even without fiat, the swap can be treated as a taxable event in many systems.</p>
-
-        <h2 id="avoid">Common mistakes to avoid</h2>
-        <ul>
-          <li>Not saving trade history before it expires</li>
-          <li>Ignoring fees (fees affect your net profit)</li>
-          <li>Using many wallets/exchanges without tracking</li>
-          <li>Assuming “small trades don’t matter”</li>
-        </ul>
-
-        <h2 id="next">Next steps</h2>
-        <p>
-          If you’re still selecting a platform, go back to:
-          <a href="best-crypto-exchange-japan-2026.html">Best crypto exchange in Japan</a>.
-          If you want a step-by-step buying guide:
-          <a href="how-to-buy-bitcoin-japan.html">How to buy Bitcoin in Japan</a>.
-        </p>
-
-        <h2 id="faq">FAQs</h2>
-        <details><summary>Is crypto profit taxable in Japan?</summary><p>Crypto gains may be taxable in Japan depending on your situation. Consult a qualified tax professional.</p></details>
-        <details><summary>What should I keep for records?</summary><p>Trade history, dates, prices, fees, deposits/withdrawals, and notes.</p></details>
-
-        <div class="note">
-          <strong>Content Expansion Pack (paste to reach ~2000 words):</strong><br>
-          Add sections: “Tax glossary”, “How to organize exports monthly”, “Wallet-to-exchange transfers tracking”, “Losses and offsets (general)”, “Year-end checklist”.
-        </div>
+      <div class="note">
+        ⚠️ This article is educational only and not tax advice.
+        For personal guidance, consult a licensed Japanese tax professional.
       </div>
+    </div>
 
-      <div id="jp" lang="ja" style="display:none;">
-        <p class="meta">※日本語は要点版です（英語がメイン）。</p>
+    <div class="card">
+      <h2>When do you pay crypto tax in Japan?</h2>
+      <p>You may need to calculate taxes when you:</p>
+      <ul>
+        <li>Sell cryptocurrency for fiat (JPY)</li>
+        <li>Trade one crypto for another</li>
+        <li>Use crypto to buy goods or services</li>
+        <li>Receive crypto as income or rewards</li>
+      </ul>
 
-        <h2>日本の暗号通貨税制（2026年）要点</h2>
-        <p>
-          暗号通貨の利益は課税対象になる場合があります。重要なのは、取引履歴と手数料を含めた記録を残すことです。
-        </p>
+      <p>
+        Simply holding Bitcoin without selling or trading usually does not create a taxable event.
+        Problems start when beginners trade frequently without tracking results.
+      </p>
+    </div>
 
-        <div class="note">
-          免責事項：本ページは一般情報であり、税務アドバイスではありません。専門家に相談してください。
-        </div>
+    <div class="card">
+      <h2>Example: Simple Bitcoin tax calculation</h2>
+      <p>
+        Example scenario:
+      </p>
+      <ul>
+        <li>You buy Bitcoin for ¥1,000,000</li>
+        <li>You later sell it for ¥1,300,000</li>
+        <li>Your profit = ¥300,000</li>
+      </ul>
 
-        <h3>記録しておくべきもの</h3>
-        <ul>
-          <li>取引日時・価格・数量</li>
-          <li>手数料（取引/出金）</li>
-          <li>入出金履歴</li>
-        </ul>
+      <p>
+        That profit may be considered taxable income.
+        The exact tax rate depends on your total income for the year.
+      </p>
 
-        <p>
-          次に読む：
-          <a href="best-crypto-exchange-japan-2026.html">取引所比較</a> •
-          <a href="how-to-buy-bitcoin-japan.html">BTC購入手順</a>
-        </p>
+      <div class="note">
+        Tip: Even small trades can add up. Keep records from day one.
       </div>
+    </div>
 
-    </article>
+    <div class="card">
+      <h2>Why record keeping is critical</h2>
+      <p>
+        One of the biggest mistakes beginners make is not keeping transaction records.
+        If you trade often, it becomes very difficult to calculate profits later.
+      </p>
 
-    <aside class="card toc">
-      <h3 style="margin:0 0 10px">On this page</h3>
-      <a href="#why">Why it matters</a>
-      <a href="#events">Taxable events</a>
-      <a href="#records">Records</a>
-      <a href="#tools">Tracking</a>
-      <a href="#examples">Examples</a>
-      <a href="#avoid">Mistakes</a>
-      <a href="#faq">FAQs</a>
-    </aside>
+      <p>
+        Always track:
+      </p>
+      <ul>
+        <li>Date of purchase and sale</li>
+        <li>Amount of crypto</li>
+        <li>Price in JPY</li>
+        <li>Exchange used</li>
+        <li>Fees paid</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Do exchanges report taxes automatically?</h2>
+      <p>
+        Most exchanges provide transaction history, but they usually do not calculate your final tax automatically.
+        It is your responsibility to report correctly.
+      </p>
+
+      <p>
+        If you trade on multiple platforms, tracking becomes even more important.
+        This is why beginners should avoid over-trading.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Common crypto tax mistakes in Japan</h2>
+      <ul>
+        <li>Ignoring crypto-to-crypto trades</li>
+        <li>Not converting profits into JPY value</li>
+        <li>Missing records from old trades</li>
+        <li>Assuming crypto is tax-free</li>
+      </ul>
+
+      <p>
+        If you are new, keep things simple: trade less, record everything, and ask for professional help if needed.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Best practice for beginners (summary)</h2>
+      <ul>
+        <li>Start with small trades</li>
+        <li>Use reputable exchanges</li>
+        <li>Keep clear records</li>
+        <li>Learn rules before scaling</li>
+      </ul>
+
+      <p>
+        For safer trading platforms, read:
+        <a href="best-crypto-exchange-japan-2026.html">Best crypto exchange in Japan</a>.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Conclusion</h2>
+      <p>
+        Crypto taxes in Japan can feel confusing at first, but they are manageable if you understand the basics.
+        The biggest risk is ignoring taxes completely.
+        If you trade responsibly, keep records, and learn the rules early, you can avoid serious problems later.
+      </p>
+    </div>
+
   </div>
 
-  <footer>© 2026 Crypto Guide Japan • Educational only • Not tax advice</footer>
+  <!-- ================= JAPANESE PARTIAL ================= -->
+  <div id="jp" style="display:none">
+
+    <div class="card">
+      <h2>日本の暗号資産（仮想通貨）税金について</h2>
+      <p>
+        日本では、ビットコインなどの暗号資産の利益は課税対象になる場合があります。
+        多くの場合「雑所得」として扱われます。
+      </p>
+
+      <p>
+        売却、暗号資産同士の交換、支払いに使用した場合などは注意が必要です。
+      </p>
+
+      <div class="note">
+        詳細ガイド：
+        <a href="how-to-buy-bitcoin-japan.html">ビットコインの買い方</a> •
+        <a href="best-crypto-exchange-japan-2026.html">取引所比較</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>初心者向けポイント</h3>
+      <ul>
+        <li>取引履歴を必ず保存する</li>
+        <li>頻繁な取引を避ける</li>
+        <li>不明な場合は専門家に相談</li>
+      </ul>
+    </div>
+
+  </div>
+
 </div>
 </body>
 </html>
+
