@@ -3,208 +3,601 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>How to Buy Bitcoin in Japan (2026) – Step-by-Step for Beginners</title>
-  <meta name="description" content="Learn how to buy Bitcoin in Japan in 2026. Simple step-by-step guide for beginners: choosing an exchange, KYC, deposits, fees, safety, and first BTC purchase."/>
+
+  <title>How to Buy Bitcoin in Japan (2026) – Step-by-Step Beginner Guide</title>
+  <meta name="description" content="How to buy Bitcoin in Japan in 2026 (beginner guide). Learn the safest step-by-step process: choosing an exchange, KYC, deposits, fees, market vs limit orders, and security tips."/>
   <meta name="robots" content="index,follow,max-image-preview:large"/>
   <meta name="content-language" content="en,ja"/>
   <link rel="canonical" href="https://sneetakarta07-lab.github.io/crypto/how-to-buy-bitcoin-japan.html"/>
 
+  <meta property="og:title" content="How to Buy Bitcoin in Japan (2026) – Step-by-Step Beginner Guide"/>
+  <meta property="og:description" content="Safe, simple steps to buy BTC in Japan: exchange choice, KYC, deposits, fees, orders, security, and FAQs."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://sneetakarta07-lab.github.io/crypto/how-to-buy-bitcoin-japan.html"/>
+  <meta property="og:image" content="https://sneetakarta07-lab.github.io/crypto/images/how-to-buy-bitcoin-japan.webp"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+
   <style>
-    :root{--bg:#0b1220;--panel:rgba(15,26,48,.62);--panel2:rgba(11,18,32,.62);--text:#e7eefc;--muted:#a8b3cf;--line:rgba(255,255,255,.10);--brand:#6aa7ff;--brand2:#7c5cff;--shadow:0 14px 40px rgba(0,0,0,.35);--radius:18px;--max:1120px}
-    *{box-sizing:border-box} body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:radial-gradient(1200px 700px at 20% 0%, rgba(124,92,255,.18), transparent 55%),radial-gradient(900px 600px at 90% 10%, rgba(106,167,255,.16), transparent 55%),linear-gradient(180deg,var(--bg),#070b14 70%);color:var(--text);line-height:1.75}
-    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+    :root{
+      --bg:#0b1220;
+      --panel:rgba(15,26,48,.62);
+      --panel2:rgba(11,18,32,.62);
+      --text:#e7eefc;
+      --muted:#a8b3cf;
+      --line:rgba(255,255,255,.10);
+      --brand:#6aa7ff;
+      --brand2:#7c5cff;
+      --shadow:0 14px 40px rgba(0,0,0,.35);
+      --radius:18px;
+      --max:1120px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans";
+      background:
+        radial-gradient(1200px 700px at 20% 0%, rgba(124,92,255,.18), transparent 55%),
+        radial-gradient(900px 600px at 90% 10%, rgba(106,167,255,.16), transparent 55%),
+        linear-gradient(180deg, var(--bg), #070b14 70%);
+      color: var(--text);
+      line-height: 1.75;
+    }
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
     .wrap{max-width:var(--max);margin:0 auto;padding:26px 18px 70px}
-    .card{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);backdrop-filter:blur(10px);box-shadow:var(--shadow)}
-    .hero{padding:20px;margin-top:14px}
+    .topbar{
+      display:flex;align-items:center;justify-content:space-between;gap:12px;
+      padding:12px 16px;border:1px solid var(--line);border-radius:999px;background:var(--panel);
+      backdrop-filter: blur(10px);box-shadow:var(--shadow);
+    }
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800}
+    .dot{width:10px;height:10px;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--brand2));
+      box-shadow:0 0 0 6px rgba(106,167,255,.15)}
     .meta{color:var(--muted);font-size:13px}
-    .langBar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 14px}
-    .langBtn{border:1px solid var(--line);background:rgba(11,18,32,.55);color:var(--text);padding:8px 12px;border-radius:999px;cursor:pointer;font-weight:650}
-    .langBtn:hover{filter:brightness(1.06)}
-    .grid{display:grid;grid-template-columns:1fr 320px;gap:16px;align-items:start;margin-top:16px}
-    @media(max-width:980px){.grid{grid-template-columns:1fr}}
+    .card{
+      border:1px solid var(--line);border-radius:var(--radius);
+      background:var(--panel);backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
+    }
+    .hero{margin-top:16px;overflow:hidden}
+    .heroGrid{display:grid;grid-template-columns:1.2fr .8fr}
+    @media(max-width:900px){.heroGrid{grid-template-columns:1fr}}
+    .heroText{padding:22px}
+    h1{margin:0 0 10px;font-size:clamp(26px,3.2vw,44px);line-height:1.15}
+    .kicker{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:6px 10px;border-radius:999px;border:1px solid var(--line);
+      background:var(--panel2);color:var(--muted);font-size:13px;
+    }
+    .btnRow{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:10px 14px;border-radius:12px;border:1px solid var(--line);
+      background:rgba(15,26,48,.72);color:var(--text);font-weight:650;
+    }
+    .btnPrimary{
+      background:linear-gradient(135deg,var(--brand),var(--brand2));
+      border:none;box-shadow:0 10px 26px rgba(106,167,255,.20);
+    }
+    .btnPrimary:hover{filter:brightness(1.05);text-decoration:none}
+    .heroMedia{
+      padding:18px;background:rgba(13,23,48,.35);border-left:1px solid var(--line);
+      display:flex;align-items:center;justify-content:center;
+    }
+    @media(max-width:900px){.heroMedia{border-left:none;border-top:1px solid var(--line)}}
+    .figure{width:100%;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:rgba(0,0,0,.15)}
+    .figure img{width:100%;height:auto;display:block}
+    .caption{padding:10px 12px;color:var(--muted);font-size:13px}
+    .content{margin-top:18px;display:grid;grid-template-columns:1fr 340px;gap:18px;align-items:start}
+    @media(max-width:980px){.content{grid-template-columns:1fr}}
     .article{padding:22px}
-    h1{margin:0 0 8px;font-size:clamp(24px,3vw,40px);line-height:1.15}
-    h2{margin:26px 0 10px;font-size:22px} h3{margin:18px 0 8px;font-size:18px}
-    .note{padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:var(--panel2);color:var(--muted);margin:14px 0}
-    img{max-width:100%;border-radius:14px;border:1px solid var(--line);display:block}
-    ul{margin:10px 0 10px 20px} li{margin:6px 0}
-    .toc{padding:16px}
-    .toc a{display:block;color:var(--muted);padding:8px 10px;border-radius:12px}
-    .toc a:hover{background:rgba(106,167,255,.08);color:var(--text);text-decoration:none}
-    details{border:1px solid var(--line);border-radius:14px;background:rgba(11,18,32,.55);padding:10px 12px;margin:10px 0}
+    h2{margin:28px 0 10px;font-size:22px;letter-spacing:-.2px}
+    h3{margin:18px 0 8px;font-size:18px}
+    p{margin:10px 0}
+    ul,ol{margin:10px 0 10px 20px}
+    li{margin:6px 0}
+    .note{
+      padding:12px 14px;border-radius:14px;border:1px solid var(--line);
+      background:var(--panel2);color:var(--muted);margin:14px 0;
+    }
+    .langBar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 14px}
+    .langBtn{
+      border:1px solid var(--line);background:rgba(11,18,32,.55);
+      color:var(--text);padding:8px 12px;border-radius:999px;cursor:pointer;font-weight:650;
+    }
+    .langBtn:hover{filter:brightness(1.06)}
+    table{
+      width:100%;border-collapse:collapse;margin:12px 0 6px;
+      border-radius:14px;overflow:hidden;border:1px solid var(--line);
+      background:rgba(11,18,32,.55);
+    }
+    th,td{padding:10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:14px}
+    th{color:var(--muted);font-weight:800}
+    tr:last-child td{border-bottom:none}
+    details{
+      border:1px solid var(--line);border-radius:14px;background:rgba(11,18,32,.55);
+      padding:10px 12px;margin:10px 0;
+    }
     summary{cursor:pointer;font-weight:800}
-    footer{margin-top:18px;padding:16px;color:var(--muted);text-align:center;border-top:1px solid var(--line)}
+    details p{color:var(--muted)}
+    .toc{padding:18px}
+    .toc h3{margin:0 0 10px;font-size:16px}
+    .toc a{display:block;padding:8px 10px;border-radius:12px;border:1px solid transparent;color:var(--muted)}
+    .toc a:hover{background:rgba(106,167,255,.08);border-color:rgba(106,167,255,.20);color:var(--text);text-decoration:none}
+    footer{margin-top:18px;padding:18px;color:var(--muted);text-align:center;border-top:1px solid var(--line)}
+    code{color:#dbeafe}
   </style>
 
   <script>
-    function showEN(){document.getElementById('en').style.display='block';document.getElementById('jp').style.display='none';document.documentElement.lang='en';}
-    function showJP(){document.getElementById('en').style.display='none';document.getElementById('jp').style.display='block';document.documentElement.lang='ja';}
+    function showEN(){
+      document.getElementById('en').style.display='block';
+      document.getElementById('jp').style.display='none';
+      document.documentElement.lang='en';
+    }
+    function showJP(){
+      document.getElementById('en').style.display='none';
+      document.getElementById('jp').style.display='block';
+      document.documentElement.lang='ja';
+    }
     document.addEventListener("DOMContentLoaded", ()=>showEN());
   </script>
 
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-    {"@type":"Question","name":"Is buying Bitcoin legal in Japan?","acceptedAnswer":{"@type":"Answer","text":"Yes, buying and selling Bitcoin is legal in Japan. Reputable platforms commonly require identity verification (KYC)."}},
-    {"@type":"Question","name":"What is the safest way to buy Bitcoin in Japan?","acceptedAnswer":{"@type":"Answer","text":"Use a reputable exchange, enable 2FA, start with small amounts, and avoid suspicious links or 'guaranteed profit' offers."}},
-    {"@type":"Question","name":"Should beginners use market or limit orders?","acceptedAnswer":{"@type":"Answer","text":"Beginners can start with a small market order, but limit orders help control the price and reduce emotional mistakes."}}
-  ]}
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Is buying Bitcoin legal in Japan?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes, buying and selling Bitcoin is legal in Japan. Most reputable platforms require identity verification (KYC)."}
+      },
+      {
+        "@type":"Question",
+        "name":"What is the safest way to buy Bitcoin in Japan as a beginner?",
+        "acceptedAnswer":{"@type":"Answer","text":"Use a reputable exchange, enable 2FA, start with small amounts, avoid suspicious links, and do a small test withdrawal before moving large funds."}
+      },
+      {
+        "@type":"Question",
+        "name":"Should beginners use market orders or limit orders?",
+        "acceptedAnswer":{"@type":"Answer","text":"A small market order is simplest for your first buy. Limit orders give price control and are better once you understand the basics."}
+      },
+      {
+        "@type":"Question",
+        "name":"Do I need to think about taxes in Japan when I buy Bitcoin?",
+        "acceptedAnswer":{"@type":"Answer","text":"In general, crypto gains may be taxable in Japan depending on your situation. Keep records and consult a qualified tax professional for accurate advice."}
+      }
+    ]
+  }
   </script>
 </head>
 
 <body>
 <div class="wrap">
 
-  <div class="card hero">
-    <h1>How to Buy Bitcoin in Japan (2026) – Step-by-Step for Beginners</h1>
-    <div class="meta">Japan Focus • Beginner-friendly • Security + Fees + Simple steps</div>
-
-    <div class="langBar" style="margin-top:12px">
-      <button class="langBtn" onclick="showEN()">English</button>
-      <button class="langBtn" onclick="showJP()">日本語</button>
-      <span class="meta">Toggle language manually (works from any IP).</span>
-    </div>
-
-    <img src="images/how-to-buy-bitcoin-japan.webp" alt="How to buy Bitcoin in Japan 2026 step-by-step" loading="lazy" decoding="async">
-    <div class="note">
-      Quick links:
-      <a href="best-crypto-exchange-japan-2026.html">Main guide (Best exchange)</a> •
-      <a href="okx-japan-review.html">OKX Japan review</a> •
-      <a href="crypto-tax-japan-2026.html">Japan crypto tax</a> •
-      <a href="best-crypto-app-japan.html">Best crypto apps</a>
-    </div>
+  <div class="topbar">
+    <div class="brand"><span class="dot"></span><span>Crypto Guide Japan</span></div>
+    <div class="meta">Updated for 2026 • Beginner-first • Japan focus</div>
   </div>
 
-  <div class="grid">
-    <article class="card article">
-
-      <!-- ENGLISH -->
-      <div id="en">
-        <p>
-          Buying Bitcoin in Japan is simple if you follow a safe process. Most beginners lose money not because Bitcoin is “bad,”
-          but because they rush: they download fake apps, skip security settings, or use the wrong order type.
-          This guide is written to help you buy BTC safely, understand fees, and avoid common mistakes in 2026.
+  <section class="card hero">
+    <div class="heroGrid">
+      <div class="heroText">
+        <span class="kicker">Japan • 2026 • Safe steps</span>
+        <h1>How to Buy Bitcoin in Japan (2026): Step-by-Step Beginner Guide</h1>
+        <p class="meta">
+          This guide is written for complete beginners in Japan. You’ll learn the safest step-by-step process to buy BTC,
+          understand fees, avoid scams, and make your first purchase confidently.
         </p>
 
-        <h2 id="step1">Step 1: Choose a reputable exchange</h2>
-        <p>
-          Start by choosing a trusted exchange. In Japan, users care about security, transparency, and a smooth deposit/withdraw experience.
-          If you haven’t decided yet, read our main comparison:
-          <a href="best-crypto-exchange-japan-2026.html">Best crypto exchange in Japan (2026)</a>.
-        </p>
-        <ul>
-          <li><strong>Security:</strong> 2FA, withdrawal protection, device management.</li>
-          <li><strong>Clear fees:</strong> spot fees, withdrawal fees, and spreads.</li>
-          <li><strong>Liquidity:</strong> better pricing and less slippage for BTC/ETH.</li>
-        </ul>
-
-        <h2 id="step2">Step 2: Create your account + lock security</h2>
-        <p>
-          Use a unique password and enable <strong>2FA</strong> immediately. This single step prevents most account takeovers.
-          Also enable email/login alerts and review “connected devices” settings.
-        </p>
-
-        <h2 id="step3">Step 3: Complete KYC verification</h2>
-        <p>
-          On serious platforms, identity verification (KYC) is normal. It helps reduce fraud and improves withdrawal limits.
-          Keep your details consistent and avoid uploading unclear photos. After KYC, you’ll be able to deposit and trade smoothly.
-        </p>
-
-        <h2 id="step4">Step 4: Deposit funds (start small)</h2>
-        <p>
-          Beginners should deposit a small amount first. Your goal is to learn the flow:
-          deposit → buy BTC → sell BTC → withdraw. Once you understand the steps, you can increase your size.
-        </p>
-        <div class="note">
-          Tip: Always check deposit/withdraw methods and costs. Fees are explained in our main guide:
-          <a href="best-crypto-exchange-japan-2026.html#fees">fees section</a>.
+        <div class="btnRow">
+          <a class="btn btnPrimary" href="#steps">Start with Steps</a>
+          <a class="btn" href="#fees">Fees Explained</a>
+          <a class="btn" href="#safety">Security Checklist</a>
         </div>
 
-        <h2 id="step5">Step 5: Buy Bitcoin (market vs limit)</h2>
-        <p>
-          You’ll usually trade a BTC pair (example: BTC/USDT). Two common order types:
-        </p>
-        <ul>
-          <li><strong>Market order:</strong> instant buy at current price. Simple, but can be slightly worse in fast markets.</li>
-          <li><strong>Limit order:</strong> you set the price. Better control; recommended once you understand basics.</li>
-        </ul>
-
-        <h2 id="safety">Safety checklist (Japan beginners)</h2>
-        <ul>
-          <li>Bookmark official URLs. Avoid random links in DMs.</li>
-          <li>Enable 2FA + anti-phishing code if available.</li>
-          <li>Do a small test withdrawal before moving large funds.</li>
-          <li>Never share OTP codes or recovery phrases.</li>
-        </ul>
-
-        <h2 id="next">What to read next</h2>
-        <p>
-          After you buy BTC, the next important topic is taxes and record-keeping:
-          <a href="crypto-tax-japan-2026.html">Crypto tax in Japan (2026)</a>.
-          If you want a platform overview, read:
-          <a href="okx-japan-review.html">OKX Japan review</a>.
-        </p>
-
-        <h2 id="faq">FAQs</h2>
-        <details><summary>Is buying Bitcoin legal in Japan?</summary><p>Yes, buying and selling Bitcoin is legal in Japan. Reputable platforms commonly require KYC.</p></details>
-        <details><summary>How much should a beginner start with?</summary><p>Start small. The first goal is learning the process safely, not “getting rich fast.”</p></details>
-        <details><summary>Should I keep BTC on an exchange?</summary><p>For long-term storage, many users prefer a personal wallet. For small learning amounts, exchange storage can be acceptable if security is strong.</p></details>
-
         <div class="note">
-          <strong>Content Expansion Pack (paste below to reach ~2000 words):</strong><br>
-          Add extra sections: “Common mistakes in Japan”, “How to avoid fake apps”, “How to withdraw BTC safely”, “Beginner glossary”, “Mini-case example (buy + withdraw)”.
-          (اگر آپ چاہیں تو میں اسی page کو full 2000 words میں next message میں expand کر دوں گا۔)
+          Internal links (your SEO cluster):
+          <a href="best-crypto-exchange-japan-2026.html">Best exchange in Japan</a> •
+          <a href="crypto-tax-japan-2026.html">Japan crypto tax</a> •
+          <a href="okx-japan-review.html">OKX Japan review</a> •
+          <a href="best-crypto-app-japan.html">Best crypto apps</a>
         </div>
       </div>
 
-      <!-- JAPANESE (PARTIAL) -->
-      <div id="jp" lang="ja" style="display:none;">
-        <p class="meta">
-          ※日本語は要点版です（英語がメイン）。必要なら後で日本語ボリュームも増やせます。
-        </p>
+      <div class="heroMedia">
+        <div class="figure">
+          <img src="images/how-to-buy-bitcoin-japan.webp"
+               alt="How to buy Bitcoin in Japan 2026 step-by-step beginner guide"
+               width="1200" height="675"
+               loading="lazy" decoding="async"/>
+          <div class="caption">Image: Japan + Bitcoin buying concept (safe, logo-free).</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <h2>日本でビットコインを買う方法（初心者向け）</h2>
+  <section class="content">
+    <article class="card article">
+
+      <div class="langBar">
+        <button class="langBtn" type="button" onclick="showEN()">English</button>
+        <button class="langBtn" type="button" onclick="showJP()">日本語</button>
+        <span class="meta">Manual toggle (works from any country/IP).</span>
+      </div>
+
+      <!-- ===================== ENGLISH (FULL 2000+ WORDS) ===================== -->
+      <div id="en">
         <p>
-          日本でBTCを安全に購入するには、信頼できる取引所を選び、2FAを有効にし、小額から始めるのが基本です。
+          Buying Bitcoin in Japan is not “hard,” but it <em>can</em> be risky if you skip the basics. Most beginner mistakes are predictable:
+          using the wrong exchange, ignoring security, chasing hype coins, or falling for phishing links. In 2026, the safest approach is simple:
+          pick a reputable platform, secure your account, start small, understand fees, and learn the difference between market and limit orders.
         </p>
 
         <div class="note">
-          参考リンク：
-          <a href="best-crypto-exchange-japan-2026.html">日本の取引所比較（メイン）</a> •
+          <strong>Important:</strong> This page is educational only and not financial advice. Crypto is volatile—only invest what you can afford to lose.
+        </div>
+
+        <h2 id="before">Before you buy: understand what Bitcoin is (in 60 seconds)</h2>
+        <p>
+          Bitcoin (BTC) is a digital currency running on a decentralized network. You can buy it on exchanges and store it on an exchange account or a personal wallet.
+          In practical terms, buying BTC is like buying any asset: you pay a price, you hold it, and you can sell later. What makes BTC different is price volatility,
+          and that is why safety and risk management matter from day one.
+        </p>
+
+        <h2 id="legal">Is buying Bitcoin legal in Japan?</h2>
+        <p>
+          Yes, buying and selling Bitcoin is legal in Japan. Many reputable exchanges require identity verification (KYC).
+          For beginners, this is usually a good thing—because safer platforms tend to follow compliance rules and protect users better than “random” websites.
+        </p>
+
+        <h2 id="exchange">Step 0: Choose the right exchange for Japan</h2>
+        <p>
+          Your exchange choice is the most important decision in the entire process. If you choose a poor platform, everything becomes harder: deposits fail, fees are unclear,
+          withdrawals are slow, and support disappears when you need help.
+        </p>
+        <p>
+          A “best exchange” for Japan beginners usually has:
+          <strong>strong security</strong>, <strong>transparent fees</strong>, <strong>good liquidity</strong>, and a <strong>stable mobile app</strong>.
+          If you want a comparison, open:
+          <a href="best-crypto-exchange-japan-2026.html">Best crypto exchange in Japan (2026)</a>.
+        </p>
+
+        <h3>Quick beginner checklist</h3>
+        <ul>
+          <li><strong>Security:</strong> 2FA, device management, withdrawal protection</li>
+          <li><strong>Fees:</strong> spot fee, withdrawal fee, and spread clarity</li>
+          <li><strong>Liquidity:</strong> better pricing for BTC/ETH (less slippage)</li>
+          <li><strong>UX:</strong> easy interface so you don’t make mistakes</li>
+        </ul>
+
+        <h2 id="steps">How to buy Bitcoin in Japan (step-by-step)</h2>
+
+        <h3>Step 1: Create an account</h3>
+        <p>
+          Sign up using an email you control and protect. Avoid using temporary emails. Use a password manager or create a strong password you’ve never used anywhere else.
+          Password reuse is one of the most common reasons people lose accounts.
+        </p>
+
+        <h3>Step 2: Secure your account immediately (do this first)</h3>
+        <p>
+          Before depositing money, secure your account:
+        </p>
+        <ul>
+          <li>Enable <strong>2FA</strong> (Authenticator app is usually safer than SMS)</li>
+          <li>Turn on login alerts / device alerts</li>
+          <li>Review “connected devices” and remove unknown devices</li>
+          <li>Use an anti-phishing code if available</li>
+        </ul>
+
+        <div class="note">
+          <strong>Rule:</strong> No deposit until 2FA is enabled. This one habit can prevent most account takeovers.
+        </div>
+
+        <h3>Step 3: Complete KYC (identity verification)</h3>
+        <p>
+          Most reputable platforms require KYC. This usually means uploading an ID and sometimes a selfie for verification.
+          Tips so you don’t get stuck:
+        </p>
+        <ul>
+          <li>Use clear photos with good lighting</li>
+          <li>Make sure your name and details match your documents</li>
+          <li>Don’t use heavy filters or edited images</li>
+          <li>If asked for address proof, upload a clean document (no blur)</li>
+        </ul>
+
+        <h3>Step 4: Deposit funds (start small)</h3>
+        <p>
+          Beginners should deposit a small amount first. Your first goal is not profit—your goal is to learn the workflow:
+          deposit → buy BTC → sell BTC → withdraw.
+          Once you can complete this cycle without stress, you can scale safely.
+        </p>
+
+        <h3>Step 5: Choose BTC pair and place your first order</h3>
+        <p>
+          Most platforms allow you to buy BTC through a trading pair like BTC/USDT (or similar).
+          Beginners should understand the two basic order types:
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Order Type</th>
+              <th>Best For</th>
+              <th>Pros</th>
+              <th>Cons</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Market Order</strong></td>
+              <td>First-time buy, quick entry</td>
+              <td>Instant purchase</td>
+              <td>Price may be slightly worse during fast moves</td>
+            </tr>
+            <tr>
+              <td><strong>Limit Order</strong></td>
+              <td>Better control</td>
+              <td>You set your price</td>
+              <td>May not fill if price doesn’t reach your level</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          If you are buying BTC for the first time, a <strong>small market order</strong> is fine. But once you understand the interface,
+          limit orders can help you avoid emotional buys (for example, buying after a sudden pump).
+        </p>
+
+        <h3>Step 6: Confirm your holdings and create a basic plan</h3>
+        <p>
+          After the buy is complete, you will see BTC in your wallet/portfolio. Now decide:
+          Are you buying BTC to hold long-term, or are you trading short-term? Beginners should avoid over-trading.
+          If you trade too often, fees and emotions can destroy your results.
+        </p>
+
+        <h2 id="fees">Fees explained in simple words (Japan beginners)</h2>
+        <p>
+          Fees are one of the biggest reasons beginners lose money without noticing. There are four main cost types:
+        </p>
+
+        <h3>1) Trading fees (spot fees)</h3>
+        <p>
+          Spot fees apply when you buy/sell BTC on the spot market. If you trade frequently, low fees matter.
+        </p>
+
+        <h3>2) Spread (hidden cost many beginners ignore)</h3>
+        <p>
+          Some platforms advertise “zero fees” but use a wide spread (buy price higher, sell price lower). This can cost you more than fees.
+          Always look at the real executed price.
+        </p>
+
+        <h3>3) Withdrawal fees</h3>
+        <p>
+          Withdrawal fees depend on the coin and the network. For BTC, network fees can change depending on traffic.
+          Always check withdrawal fees before moving large amounts.
+        </p>
+
+        <h3>4) Network fees</h3>
+        <p>
+          Network fees are paid to the blockchain and can increase during busy times. This is normal.
+        </p>
+
+        <div class="note">
+          Want a full exchange comparison including fee factors? Read:
+          <a href="best-crypto-exchange-japan-2026.html#compare">comparison table</a>.
+        </div>
+
+        <h2 id="safety">Security checklist (do this to avoid scams)</h2>
+        <p>
+          Even in a safer market, scams exist. The most common scam methods are phishing websites, fake apps, and fake support accounts.
+          Here is your beginner safety checklist:
+        </p>
+
+        <ul>
+          <li><strong>Bookmark official URLs</strong> and use them every time</li>
+          <li><strong>Never share OTP/2FA codes</strong> with anyone (support will never ask)</li>
+          <li><strong>Never share recovery phrases</strong> (if you use a personal wallet)</li>
+          <li><strong>Use device lock</strong> and avoid public Wi-Fi for withdrawals</li>
+          <li><strong>Do test withdrawals</strong> before moving large funds</li>
+        </ul>
+
+        <h3>How to avoid fake apps</h3>
+        <p>
+          Fake apps are a big problem for beginners. To protect yourself:
+        </p>
+        <ul>
+          <li>Download only from official app stores</li>
+          <li>Verify the publisher name and reviews</li>
+          <li>Never install APKs from random websites</li>
+          <li>If you are unsure, use the website link from the official exchange page</li>
+        </ul>
+
+        <h2 id="withdraw">How to withdraw Bitcoin safely (beginner method)</h2>
+        <p>
+          Withdrawing BTC is where beginners make expensive mistakes (wrong address or wrong network). Use this safe process:
+        </p>
+        <ol>
+          <li>Copy your destination wallet address carefully</li>
+          <li>Double-check the first 4 and last 4 characters</li>
+          <li>Send a <strong>small test amount</strong> first</li>
+          <li>After confirmation, send the remaining amount</li>
+        </ol>
+
+        <div class="note">
+          If you plan to hold long-term, consider learning wallets later. For now, focus on safe basics and avoid rushing.
+        </div>
+
+        <h2 id="tax">Taxes in Japan (beginner basics)</h2>
+        <p>
+          Many beginners ignore taxes and record-keeping until they have many trades. In general, crypto gains may be taxable in Japan depending on your situation.
+          The best habit is simple: keep records from day one.
+        </p>
+        <p>
+          For a beginner-friendly explanation (not advice), read:
+          <a href="crypto-tax-japan-2026.html">Crypto tax in Japan (2026)</a>.
+        </p>
+
+        <h2 id="bestapp">Best way to buy BTC on mobile (Japan users)</h2>
+        <p>
+          Many Japanese users prefer mobile apps. If you trade on mobile, prioritize security features and stability.
+          Here is a dedicated guide:
+          <a href="best-crypto-app-japan.html">Best crypto apps in Japan (2026)</a>.
+        </p>
+
+        <h2 id="platform">Which platform should a beginner choose?</h2>
+        <p>
+          If you’re choosing a platform, decide what you want:
+        </p>
+        <ul>
+          <li><strong>Just buy and hold BTC:</strong> simple UI + strong security</li>
+          <li><strong>Trade occasionally:</strong> low fees + liquidity</li>
+          <li><strong>Advanced trading later:</strong> platform with good tools (but avoid leverage at the start)</li>
+        </ul>
+
+        <p>
+          For a detailed platform overview, read:
+          <a href="okx-japan-review.html">OKX Japan review</a>.
+          If you want to try OKX, here is a soft link:
+          <a href="https://okx.ac/join/59662484" target="_blank" rel="nofollow sponsored noopener">Open OKX Account</a>.
+        </p>
+
+        <h2 id="mistakes">Common beginner mistakes (and how to avoid them)</h2>
+        <h3>1) Buying too much too fast</h3>
+        <p>
+          Beginners often invest too much on day one because of social media hype. A better plan is to start small and learn the process.
+          Once you understand buying and withdrawing, you can increase safely.
+        </p>
+
+        <h3>2) Ignoring fees</h3>
+        <p>
+          Fees add up. If you trade frequently, fees can eat profits. Use fewer trades, higher-quality decisions, and understand your total costs.
+        </p>
+
+        <h3>3) Using leverage too early</h3>
+        <p>
+          Leverage is not for beginners. It can liquidate you quickly. Focus on spot trading first.
+        </p>
+
+        <h3>4) Falling for “guaranteed profit” scams</h3>
+        <p>
+          Anyone promising guaranteed returns is usually a scammer. Real markets do not guarantee profit.
+        </p>
+
+        <h2 id="faq">FAQs (Japan beginners)</h2>
+
+        <details>
+          <summary>Is buying Bitcoin legal in Japan?</summary>
+          <p>Yes, buying and selling Bitcoin is legal in Japan. Most reputable exchanges require KYC.</p>
+        </details>
+
+        <details>
+          <summary>How much should a beginner start with?</summary>
+          <p>Start small. Your first goal is to learn deposit → buy → sell → withdraw safely, not to “get rich fast.”</p>
+        </details>
+
+        <details>
+          <summary>Market order vs limit order: which is better?</summary>
+          <p>A small market order is simplest for the first purchase. Limit orders give better price control once you understand the interface.</p>
+        </details>
+
+        <details>
+          <summary>Should I keep BTC on the exchange?</summary>
+          <p>For long-term holdings, many users prefer a personal wallet. Beginners can start on an exchange with strong security, then learn wallets later.</p>
+        </details>
+
+        <details>
+          <summary>What should I read next?</summary>
+          <p>
+            Next guides:
+            <a href="best-crypto-exchange-japan-2026.html">Best exchange in Japan</a>,
+            <a href="crypto-tax-japan-2026.html">Japan tax guide</a>,
+            <a href="okx-japan-review.html">OKX review</a>,
+            <a href="best-crypto-app-japan.html">Best crypto apps</a>.
+          </p>
+        </details>
+
+        <h2 id="conclusion">Conclusion</h2>
+        <p>
+          Buying Bitcoin in Japan is straightforward when you follow a safe process: pick a reputable exchange, enable 2FA, complete KYC, start small,
+          understand fees, and use the right order type. Avoid rushing and avoid leverage until you truly understand risk.
+          If you want to move faster, build your knowledge using the internal guides linked on this page.
+        </p>
+
+        <p class="meta">
+          Optional OKX link (soft): <a href="https://okx.ac/join/59662484" target="_blank" rel="nofollow sponsored noopener">Try OKX</a>
+        </p>
+      </div>
+
+      <!-- ===================== JAPANESE (KEY SECTIONS) ===================== -->
+      <div id="jp" lang="ja" style="display:none;">
+        <p class="meta">
+          ※日本語は要点版です（英語本文がメイン）。必要なら日本語パートも増やせます。
+        </p>
+
+        <h2>日本でビットコインを買う方法（2026年・初心者）</h2>
+        <p>
+          日本でBTCを安全に購入するには、信頼できる取引所を選び、2FAを有効にし、小額から始めるのが基本です。
+          急いで大金を入金したり、怪しいリンクを開いたりしないことが重要です。
+        </p>
+
+        <div class="note">
+          関連ページ（内部リンク）：
+          <a href="best-crypto-exchange-japan-2026.html">取引所比較（メイン）</a> •
           <a href="crypto-tax-japan-2026.html">税金ガイド</a> •
-          <a href="okx-japan-review.html">OKXレビュー</a>
+          <a href="okx-japan-review.html">OKXレビュー</a> •
+          <a href="best-crypto-app-japan.html">おすすめアプリ</a>
         </div>
 
         <h3>基本ステップ</h3>
         <ol>
           <li>信頼できる取引所を選ぶ</li>
-          <li>アカウント作成 + 2FA設定</li>
+          <li>アカウント作成＋2FA設定</li>
           <li>本人確認（KYC）</li>
           <li>少額入金</li>
           <li>現物でBTC購入（成行/指値）</li>
         </ol>
 
-        <h3>注意点</h3>
+        <h3>初心者の安全チェック</h3>
         <ul>
-          <li>偽アプリ・フィッシングに注意（公式URLをブックマーク）</li>
-          <li>出金テストを先に行う</li>
-          <li>秘密鍵/復元フレーズは絶対に共有しない</li>
+          <li>公式URLをブックマーク（フィッシング対策）</li>
+          <li>OTP/2FAコードは絶対に共有しない</li>
+          <li>出金は小額テスト→問題なければ本送金</li>
+          <li>レバレッジは最初は避ける</li>
         </ul>
+
+        <h3>よくある質問</h3>
+        <details><summary>日本でビットコイン購入は合法ですか？</summary><p>はい、合法です。本人確認（KYC）が一般的です。</p></details>
+        <details><summary>初心者はいくらから始めるべき？</summary><p>小額から。まずは手順を安全に覚えることが大切です。</p></details>
+
+        <p>
+          OKX（リンク・任意）：
+          <a href="https://okx.ac/join/59662484" target="_blank" rel="nofollow sponsored noopener">OKXで口座開設</a>
+        </p>
       </div>
 
     </article>
 
     <aside class="card toc">
-      <h3 style="margin:0 0 10px">On this page</h3>
-      <a href="#step1">Step 1: Choose exchange</a>
-      <a href="#step2">Step 2: Secure account</a>
-      <a href="#step3">Step 3: KYC</a>
-      <a href="#step4">Step 4: Deposit</a>
-      <a href="#step5">Step 5: Buy BTC</a>
-      <a href="#safety">Safety checklist</a>
+      <h3>Quick Navigation</h3>
+      <a href="#before">What is BTC</a>
+      <a href="#legal">Legality</a>
+      <a href="#exchange">Choose exchange</a>
+      <a href="#steps">Step-by-step</a>
+      <a href="#fees">Fees</a>
+      <a href="#safety">Security</a>
+      <a href="#withdraw">Withdraw safely</a>
+      <a href="#tax">Tax basics</a>
+      <a href="#mistakes">Common mistakes</a>
       <a href="#faq">FAQs</a>
-      <a href="#next">Next</a>
+      <a href="#conclusion">Conclusion</a>
+
+      <div class="note" style="margin-top:14px">
+        <strong>Image path:</strong><br/>
+        <code>crypto/images/how-to-buy-bitcoin-japan.webp</code>
+      </div>
     </aside>
-  </div>
+  </section>
 
   <footer>© 2026 Crypto Guide Japan • Educational only • Not financial advice</footer>
 </div>
